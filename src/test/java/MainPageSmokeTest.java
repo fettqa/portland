@@ -1,7 +1,7 @@
 import org.testng.annotations.Test;
 import ru.forma.base.SeleniumBaseTest;
 
-public class SmokeCheckMainPage extends SeleniumBaseTest {
+public class MainPageSmokeTest extends SeleniumBaseTest {
 
     @Test
     public void test(){
