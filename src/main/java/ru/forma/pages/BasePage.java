@@ -1,5 +1,6 @@
 package ru.forma.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -8,6 +9,7 @@ public class BasePage<P extends BasePage<P>> {
     private static final String MAIN_HEADER_XPATH = "//*[contains(@class,'MainHeader__wrapper')]";
 
 
+    @Step("open modal menu")
     public ModalMenuHeader openModalMenu() {
         $(By.xpath(MAIN_HEADER_XPATH + "//button[@class='MainHeader__item']/span[text()='меню']")).click();
         return new ModalMenuHeader();
@@ -16,6 +18,7 @@ public class BasePage<P extends BasePage<P>> {
     public class ModalMenuHeader {
         private static final String MODAL_MENU_XPATH = "//*[contains(@class,'BurgerMenu show')]";
 
+        @Step("open about page")
         public AboutPage openAbout(){
             $(By.xpath(MODAL_MENU_XPATH + "//a[@href='/about']")).click();
             return new AboutPage();

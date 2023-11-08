@@ -1,3 +1,5 @@
+package functional;
+
 import org.testng.annotations.Test;
 import ru.forma.base.SeleniumBaseTest;
 
