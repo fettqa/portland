@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "httP://testng.org/testng-1.0.dtd">
+<suite name="smoke" verbose="1">
+    <test name="Smoke_test">
+        <classes>
+            <class name="functional.MainPageSmokeTest">
+            </class>
+        </classes>
+    </test>
+</suite>
